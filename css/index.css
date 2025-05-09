@@ -2,14 +2,12 @@
     background-color: #323232 !important;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-    padding-left: 5rem;
-    padding-right: 5rem;
+
 }
 
-
-
-
-
+.socialLink a{
+    color: white !important;
+}
 .ancre {
     display: none;
   }
@@ -25,14 +23,14 @@
     width: 20px;
     height: 2px;
     margin-top: 5px;
-    background-color: #727272;
+    background-color: #fecc52;
   }
   #hamburger>div:after, #hamburger>div:before {
     position: absolute;
     content: "";
     width: 20px;
     height: 2px;
-    background-color: #727272;
+    background-color: #fecc52;
   }
   #hamburger>div:before {
     margin-top: -5px;
@@ -75,17 +73,12 @@
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 4;
   }
-  nav {
-    width: 100%;
-    background-color: #f5f5f5;
-    height: 56px;
-    box-shadow : 0 0 4px #878787;
-  }
-  ul {
+
+  .mblUL {
     padding: 20px 0 0 60px;
     margin: 0;
   }
-  li {
+ .mblLi {
     list-style: none;
     line-height: 2.5em;
     font-size: 15px;
@@ -95,15 +88,6 @@
     padding: 11px;
     box-sizing: border-box;
   }
-  main {
-    border-radius: 2px;
-    height: 50px;
-    width: 100%;
-    background-color: #fafafa;
-    box-shadow: 0 0 2px #878787;
-  }
-  
-
 
 
 
@@ -121,10 +105,41 @@
 .outerBanner{
     height: calc(100vh - 8rem);
 }
+
+/* navBar part */
+.navBar{
+    background-color: #00000067;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navBar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navBar ul li{
+    margin: 0 1rem;
+    font-size: 18px;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
 .bannerImg1{
     width: 100%;
     height: calc(100vh - 8rem);
     display: block;
+    object-fit: cover;
 }
 .bannerContent{
     margin-top: 220px;
@@ -166,7 +181,7 @@
     
 }
 .firstDes{
-    aspect-ratio: 4 / 1;
+    aspect-ratio: 4 / 3.9;
 }
 .descBackgrounBorder{
     border: #a9a9a9 .01rem solid;
@@ -209,7 +224,8 @@
     background-color: #FECC52;
 }
 .btnSpace{
-    width: 25px;
+    
+    height: 15px;
 }
 
 .portfolioPart h1, h2, h3, h4, h5{
@@ -361,7 +377,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
 
     .bodyStyle{
         background-color: #323232 !important;
@@ -397,8 +413,24 @@
         top: 10rem;
         left: 11.5rem;
     }
-
     .firstDes{
-        aspect-ratio: 4 / 4.8;
+        aspect-ratio: 4 / 4.5;
     }
+
+    
+}
+.secondtDes{
+    aspect-ratio: 4 / 4;
+}
+.footerBG{
+    background-image: url('../images/footer.jpg');
+}
+
+.footerp{
+    color: white;
+    font-family: 'Poppins', sans-serif
+}
+.contactFooter h5 h3{
+    color: white;
+    font-family: 'Poppins', sans-serif
 }
