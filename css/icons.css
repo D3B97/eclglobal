@@ -6,7 +6,7 @@
     text-decoration: none;
     margin: 5px 8px;
     border-radius: 50%;
-    display: inline !important;
+    /* display: inline !important; */
   }
   
   .fa:hover {
