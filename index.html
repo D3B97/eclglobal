@@ -471,7 +471,7 @@
                 </div>
             </div>
             
-            <div class="col-12 col-md-10 googleComment">
+            <div class="col-12 col-md-10 d-none d-md-block googleComment">
                 <div class="your-class slids">
                    
                     <!-- 1 -->
@@ -591,19 +591,136 @@
                    
                 </div>
             </div>
+            <!-- end of desktop view -->
+
+            <!-- for mobile -->
+
+            <div class="col-12 d-block d-md-none col-md-10 googleComment">
+                <div class="your-class-for-mobile slids">
+                   
+                    <!-- 1 -->
+                    <div class="eachSlide pl-4 pr-4">
+                        <div class="topNameSection row row-cols-auto pt-2">
+                            <div class="col">
+                                    <img class="avaterComment" src="./images/avatar.png" />
+                            </div>
+                            <div class="col text-center">
+                                <h5 class="align-items-center">Subham Deb</h5>
+                            </div>
+                        </div>
+                        <!-- messasge section -->
+                         <div class="row">
+                            <div class="col-12">
+                                <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                    voluptatibus, cumque, voluptates, quia voluptas sit aspernatur aut odit
+                                    aut fugit.</p>
+                            </div>
+                         </div>
+                   </div>
+                   <!-- 2 -->
+                   <div class="eachSlide pl-4 pr-4">
+                    <div class="topNameSection row row-cols-auto pt-2">
+                        <div class="col">
+                                <img class="avaterComment" src="./images/avatar.png" />
+                        </div>
+                        <div class="col text-center">
+                            <h5 class="align-items-center">Subham Deb</h5>
+                        </div>
+                    </div>
+                    <!-- messasge section -->
+                     <div class="row">
+                        <div class="col-12">
+                            <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                voluptatibus, cumque, voluptates, quia voluptas sit aspernatur aut odit
+                                aut fugit.</p>
+                        </div>
+                     </div>
+               </div>
+                    <!-- 3 -->
+                    <div class="eachSlide pl-4 pr-4">
+                        <div class="topNameSection row row-cols-auto pt-2">
+                            <div class="col">
+                                    <img class="avaterComment" src="./images/avatar.png" />
+                            </div>
+                            <div class="col text-center">
+                                <h5 class="align-items-center">Subham Deb</h5>
+                            </div>
+                        </div>
+                        <!-- messasge section -->
+                         <div class="row">
+                            <div class="col-12">
+                                <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                    voluptatibus, cumque, voluptates, quia voluptas sit aspernatur aut odit
+                                    aut fugit.</p>
+                            </div>
+                         </div>
+                   </div>
+                     <!-- 4 -->
+                     <div class="eachSlide pl-4 pr-4">
+                        <div class="topNameSection row row-cols-auto pt-2">
+                            <div class="col">
+                                    <img class="avaterComment" src="./images/avatar.png" />
+                            </div>
+                            <div class="col text-center">
+                                <h5 class="align-items-center">Subham Deb</h5>
+                            </div>
+                        </div>
+                        <!-- messasge section -->
+                         <div class="row">
+                            <div class="col-12">
+                                <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                    voluptatibus, cumque, voluptates, quia voluptas sit aspernatur aut odit
+                                    aut fugit.</p>
+                            </div>
+                         </div>
+                   </div>
+                      <!-- 5 -->
+                      <div class="eachSlide pl-4 pr-4">
+                        <div class="topNameSection row row-cols-auto pt-2">
+                            <div class="col">
+                                    <img class="avaterComment" src="./images/avatar.png" />
+                            </div>
+                            <div class="col text-center">
+                                <h5 class="align-items-center">Subham Deb</h5>
+                            </div>
+                        </div>
+                        <!-- messasge section -->
+                         <div class="row">
+                            <div class="col-12">
+                                <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                    voluptatibus, cumque, voluptates, quia voluptas sit aspernatur aut odit
+                                    aut fugit.</p>
+                            </div>
+                         </div>
+                   </div>
+                       <!-- 6 -->
+                       <div class="eachSlide pl-4 pr-4">
+                        <div class="topNameSection row row-cols-auto pt-2">
+                            <div class="col">
+                                    <img class="avaterComment" src="./images/avatar.png" />
+                            </div>
+                            <div class="col text-center">
+                                <h5 class="align-items-center">Subham Deb</h5>
+                            </div>
+                        </div>
+                        <!-- messasge section -->
+                         <div class="row">
+                            <div class="col-12">
+                                <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                    voluptatibus, cumque, voluptates, quia voluptas sit aspernatur aut odit
+                                    aut fugit.</p>
+                            </div>
+                         </div>
+                   </div>
+                   
+                </div>
+            </div>
+
+            <!-- for mobile ends -->
+
         </div>
 
-
-        <!-- for mobile -->
-
-
-
-        <!-- for mobile ends -->
-
-
         <!-- end google ratting -->
-
-
     </div>
     <!-- end of contiainer card -->
     
@@ -681,7 +798,13 @@
         });
         });
 
-        
+        $(document).ready(function () {
+            $('.your-class-for-mobile').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+        });
 
         // $(document).ready(function () {
         //     $('.bannerSlick').slick({
